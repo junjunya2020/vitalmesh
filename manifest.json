@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "toolpkg_id": "com.vitalmesh.health_bridge",
+  "version": "0.1.0",
+  "author": ["VitalMesh", "junjunya2020"],
+  "main": "main.js",
+  "display_name": {
+    "zh": "VitalMesh 健康橋接",
+    "en": "VitalMesh Health Bridge",
+    "default": "VitalMesh Health Bridge"
+  },
+  "description": {
+    "zh": "在 OperitAI 側邊欄中連線 VitalMesh 後端，讀取 iPhone / Apple Watch 的心率與健康數據，初始化嚮導與健康查詢。",
+    "en": "Connect the VitalMesh backend from the OperitAI sidebar to read iPhone / Apple Watch heart-rate and health data, with onboarding wizard and health queries.",
+    "default": "VitalMesh Health Bridge for OperitAI sidebar."
+  },
+  "enabled_by_default": true,
+  "subpackages": [
+    {
+      "id": "vitalmesh_ha",
+      "entry": "packages/vitalmesh_ha.js",
+      "enabled_by_default": true,
+      "display_name": {
+        "zh": "VitalMesh 健康查詢",
+        "en": "VitalMesh Health Query"
+      },
+      "description": {
+        "zh": "讀取 VitalMesh 後端的心率與健康數據，供 AI 對話中查詢與健康諮詢。",
+        "en": "Read heart-rate and health data from the VitalMesh backend for AI chat queries."
+      }
+    }
+  ],
+  "resources": [
+    {
+      "key": "runtime_bundle",
+      "path": "resources/vitalmesh-runtime.tar.gz",
+      "mime": "application/gzip"
+    }
+  ],
+  "workflow_templates": [],
+  "workspace_templates": []
+}
