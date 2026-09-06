@@ -2,6 +2,8 @@
 
 OperitAI ToolPkg 插件，在手机本机运行 VitalMesh Home Assistant 兼容网关，并通过侧边栏 WebView 展示健康数据。
 
+首次使用请先阅读：[快速开始](./快速開始.md)
+
 ## 功能
 
 - 侧边栏 WebView：打开本机 `http://127.0.0.1:8123/`
