@@ -73,6 +73,13 @@ com.vitalmesh.health_bridge.toolpkg
 - QQ：`11130431230`
 - GitHub：[@junjunya2020](https://github.com/junjunya2020)
 
+## 特别鸣谢
+
+特别感谢：
+
+- OperitAI：提供 ToolPkg、终端与侧边栏 WebView 运行支持。
+- Home Assistant iOS 版本：提供移动端健康数据采集与同步支持。
+
 ## 许可证
 
 当前项目沿用 VitalMesh 项目许可证。发布到公共仓库前，请确保后端依赖及 Node.js 运行时的许可证文件一并保留。

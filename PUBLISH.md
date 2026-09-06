@@ -49,4 +49,8 @@ unzip -t release/com.vitalmesh.health_bridge.toolpkg
 sha256sum -c release/SHA256SUMS
 ```
 
+## 特别鸣谢
+
+特别感谢 OperitAI 提供 ToolPkg、终端与侧边栏 WebView 运行支持，也感谢 Home Assistant iOS 版本提供移动端健康数据采集与同步支持。
+
 不要把 Token、secret.json、数据库、日志或设备数据提交到公开仓库。VPS 部署使用 Token 的方式与本机 ToolPkg 默认无 Token 的方式保持分离。
