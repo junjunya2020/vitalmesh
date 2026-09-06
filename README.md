@@ -72,7 +72,7 @@ com.vitalmesh.health_bridge.toolpkg
 
 ## 作者与联系方式
 
-- QQ：`11130431230`
+- QQ：`1113043123`
 - GitHub：[@junjunya2020](https://github.com/junjunya2020)
 
 ## 特别鸣谢
