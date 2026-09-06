@@ -82,4 +82,6 @@ com.vitalmesh.health_bridge.toolpkg
 
 ## 许可证
 
-当前项目沿用 VitalMesh 项目许可证。发布到公共仓库前，请确保后端依赖及 Node.js 运行时的许可证文件一并保留。
+本项目采用 Apache License 2.0，详见根目录的 `LICENSE` 文件。
+
+发布包内包含 Node.js、better-sqlite3、ws 等第三方运行组件；这些组件的原始许可证和版权声明应按照各自许可证要求保留。

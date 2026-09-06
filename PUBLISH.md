@@ -53,4 +53,8 @@ sha256sum -c release/SHA256SUMS
 
 特别感谢 OperitAI 提供 ToolPkg、终端与侧边栏 WebView 运行支持，也感谢 Home Assistant iOS 版本提供移动端健康数据采集与同步支持。
 
+## 许可证
+
+本项目采用 Apache License 2.0，详见根目录的 `LICENSE` 文件。发布包包含第三方运行组件时，应同时遵守这些组件各自的许可证要求。
+
 不要把 Token、secret.json、数据库、日志或设备数据提交到公开仓库。VPS 部署使用 Token 的方式与本机 ToolPkg 默认无 Token 的方式保持分离。
