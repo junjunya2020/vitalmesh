@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "toolpkg_id": "com.vitalmesh.health_bridge",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": ["VitalMesh", "junjunya2020"],
   "main": "main.js",
   "display_name": {
@@ -32,8 +32,8 @@
   ],
   "resources": [
     {
-      "key": "runtime_bundle",
-      "path": "resources/vitalmesh-runtime.tar.gz",
+      "key": "backend_source_v105",
+      "path": "resources/vitalmesh-backend-source-v105.tar.gz",
       "mime": "application/gzip"
     }
   ],

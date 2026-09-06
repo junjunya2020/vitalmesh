@@ -7,11 +7,10 @@ OperitAI ToolPkg 插件，在手机本机运行 VitalMesh Home Assistant 兼容�
 ## 功能
 
 - 侧边栏 WebView：打开本机 `http://127.0.0.1:8123/`
-- 点击启动服务器后，包内自动部署并启动完整运行时
-- 后端绑定 `0.0.0.0:8123`
-- 内置完整 ARM64 Node.js v20.19.4
-- 内置 `node_modules` 与 ARM64 `better_sqlite3.node`
-- 默认不设置 Token，适用于本机 ToolPkg
+- 只有手動點選「啟動服務」後，才會部署原始碼並安裝生產依賴
+- 後端綁定 `0.0.0.0:8123`
+- 使用 OperitAI 執行環境提供的 `node` 與 `npm`
+- 預設不設定 Token，適用於本機 ToolPkg
 - 保留 VPS 部署版本使用的 MCP `/mcp` 接口
 - 健康工具共 4 个：
   - `list_devices`
@@ -28,25 +27,21 @@ ToolPkg 内的健康工具优先调用本机 REST API：
 
 当 REST API 不可用时，自动回退到原有 MCP JSON-RPC `/mcp` 接口。VPS 部署版仍可直接使用原生 MCP。
 
-## 运行时结构
+## 執行架構
 
-ToolPkg 只包含一个后端资源：
-
-```text
-resources/vitalmesh-runtime.tar.gz
-```
-
-该压缩包内包含：
+ToolPkg 只包含精簡的後端原始碼資源：
 
 ```text
-node/                       完整 Node.js ARM64 v20.19.4
-backend/entry.cjs          后端入口
-backend/bundle.cjs         打包后的后端代码
-backend/node_modules/      运行依赖
-backend/build/Release/     ARM64 better_sqlite3.node
+resources/vitalmesh-backend-source.tar.gz
 ```
 
-无需另外安装 Node.js、npm 或 npm 依赖。
+資源內只包含 `backend/**/*.js` 與 `backend/gateway/package.json`，不包含 Node.js、`node_modules`、native binary、編譯殘留或資料庫。首次執行 `start_server` 時，會在獨立目錄解壓原始碼並呼叫：
+
+```bash
+npm install --omit=dev --no-audit --no-fund
+```
+
+依賴安裝也可透過 `install_dependencies` 工具單獨執行。
 
 ## 安装
 
@@ -72,7 +67,7 @@ com.vitalmesh.health_bridge.toolpkg
 
 ## 作者与联系方式
 
-- QQ：`1113043123`
+- QQ：`11130431230`
 - GitHub：[@junjunya2020](https://github.com/junjunya2020)
 
 ## 特别鸣谢
