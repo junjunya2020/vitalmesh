@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "toolpkg_id": "com.vitalmesh.health_bridge",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": ["VitalMesh", "junjunya2020"],
   "main": "main.js",
   "display_name": {
@@ -10,9 +10,9 @@
     "default": "VitalMesh Health Bridge"
   },
   "description": {
-    "zh": "在 OperitAI 側邊欄中連線 VitalMesh 後端，讀取 iPhone / Apple Watch 的心率與健康數據，初始化嚮導與健康查詢。",
-    "en": "Connect the VitalMesh backend from the OperitAI sidebar to read iPhone / Apple Watch heart-rate and health data, with onboarding wizard and health queries.",
-    "default": "VitalMesh Health Bridge for OperitAI sidebar."
+    "zh": "在 OperitAI 側邊欄中連線 VitalMesh 後端，讀取 iPhone / Apple Watch 的心率與健康數據。注意：本插件採輕量原始碼架構，需本機環境提供 Node.js (>=20) 與 npm；首次手動啟動服務會執行 npm 安裝依賴 (ws) 並在 /home/ubuntu/vitalmesh-source 部署原始碼與監聽 0.0.0.0:8123 本機服務；使用者健康數據存於 /home/ubuntu/vitalmesh-data。若 npm 網路連線逾時，可配置鏡像源或代理。",
+    "en": "Connect to VitalMesh backend in OperitAI sidebar to read heart-rate and health data from iPhone / Apple Watch. Notice: Requires local Node.js (>=20) and npm. First manual start deploys source code to /home/ubuntu/vitalmesh-source, runs npm install for dependencies, listens on 0.0.0.0:8123 HTTP service, and stores health data in /home/ubuntu/vitalmesh-data.",
+    "default": "VitalMesh Health Bridge for OperitAI sidebar. Requires Node.js >=20 & npm, deploys source, listens on 0.0.0.0:8123."
   },
   "enabled_by_default": true,
   "subpackages": [

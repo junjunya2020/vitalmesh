@@ -1,6 +1,6 @@
 {
   "name": "@vitalmesh/ha-compat-gateway",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": true,
   "description": "Minimal Home Assistant mobile_app compatibility gateway for VitalMesh",
   "type": "module",
